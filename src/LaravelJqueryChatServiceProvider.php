@@ -16,6 +16,7 @@ class LaravelJqueryChatServiceProvider extends ServiceProvider
         //Registra las rutas y macros
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-jquery-chat');
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
 
     /**
