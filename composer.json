@@ -1,0 +1,30 @@
+{
+    "name": "dieegogd/laravel-jquery-chat",
+    "description": "Chat developed in jQuery for Laravel php7",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Garcia",
+            "email": "diegog368@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "5.7.28"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dieegogd\\LaravelJqueryChat\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dieegogd\\LaravelJqueryChat\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
