@@ -1,0 +1,144 @@
+#chatsIndex {
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+    z-index: 789;
+    display: table;
+}
+#chatsIndex > div {
+    display: table-row;
+}
+#chatsIndex > div > .chat_win {
+    position: relative;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+#chatsIndex > div .chat_mje_header {
+    position: relative;
+    padding: 5px 40px 5px 10px;
+    font-weight: bold;
+    background-color: var(--main-color-verde);
+    color: var(--main-color-white);
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+#chatsIndex > div .chat_mje_header button.btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: var(--main-color-white);
+    font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+#chatsIndex > div > .chat_win > .chat_mjes {
+    background-color: var(--main-color-white);
+    width: 320px;
+    height: 240px;
+    overflow: auto;
+    padding: 10px 0;
+    float: none;
+    clear: both;
+    border-left: 1px solid var(--main-color-ocupgray);
+    border-right: 1px solid var(--main-color-ocupgray);
+}
+#chatsIndex > div .chat_mje {
+    margin: 0 15px;
+    float: none;
+    clear: both;
+}
+#chatsIndex > div .chat_mje.me > .chat_mje_message,
+#chatsIndex > div .chat_mje.you > .chat_mje_message {
+    position: relative;
+    margin-bottom: 5px;
+    width: auto;
+    padding: 6px 12px;
+    line-height: 1.2em;
+}
+#chatsIndex > div .chat_mje.me > .chat_mje_message {
+    float: right;
+    margin-left: 45px;
+    background-color: var(--main-color-cream);
+    color: var(--main-color-gray);
+    border-radius: 8px 0 8px 8px;
+}
+#chatsIndex > div .chat_mje.you > .chat_mje_message:before {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-top: 5px solid var(--main-color-verde);
+    border-left: 5px solid transparent;
+    left: -5px;
+    top: 0px;
+}
+#chatsIndex > div .chat_mje.me > .chat_mje_message:before {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-top: 5px solid var(--main-color-cream);
+    border-right: 5px solid transparent;
+    right: -5px;
+    top: 0px;
+}
+#chatsIndex > div .chat_mje.you > .chat_mje_message {
+    float: left;
+    margin-right: 45px;
+    background-color: var(--main-color-verde);
+    color: var(--main-color-white);
+    border-radius: 0 8px 8px 8px;
+}
+#chatsIndex > div .chat_mje_inputs {
+    padding: 2px;
+    display: block;
+}
+#chatsIndex > div .chat_mje_inputs.inactive {
+    background-color: var(--main-color-ocupgray);
+}
+#chatsIndex > div .chat_mje_inputs.active {
+    background-color: var(--main-color-verde);
+}
+#chatsIndex > div .chat_mje_inputs > form {
+    margin: 0px;
+}
+#chatsIndex > div .chat_mje_inputs_message {
+    padding: 5px 10px;
+    border: none;
+    color: var(--main-color-gray);
+    width: 250px;
+    margin-right: 1px;
+}
+#chatsIndex > div .chat_mje_inputs_send {
+    padding: 4px 10px;
+    font-weight: bold;
+    color: var(--main-color-white);
+    width: 65px;
+}
+#chatsIndex > div .chat_mje_inputs.inactive .chat_mje_inputs_send {
+    background-color: var(--main-color-ocupgray);
+    border: 1px solid var(--main-color-ocupgray);
+    cursor: not-allowed;
+}
+#chatsIndex > div .chat_mje_inputs.active .chat_mje_inputs_send {
+    background-color: var(--main-color-verde);
+    border: 1px solid var(--main-color-verde);
+    cursor: pointer;
+}
+#chatsIndex > div .chat_mje_user {
+    display: inline;
+    color: var(--main-color-verde);
+    font-weight: bold;
+}
+#chatsIndex > div .chat_mje_message {
+    display: inline;
+}

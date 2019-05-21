@@ -3,7 +3,7 @@ Chat developed in jQuery for Laravel php7<br>
 This chat works in Localhost without Internet, it works in Intranet using jQuery
 
 ![licence](https://img.shields.io/badge/licencia-MIT-red.svg?style=plastic)
-![version](https://img.shields.io/badge/version-v0.0.0-blue.svg?style=plastic)
+![version](https://img.shields.io/badge/version-v0.2.1-blue.svg?style=plastic)
 ![testscase](https://img.shields.io/badge/testcase-0-green.svg?style=plastic)
 ![coverage](https://img.shields.io/badge/coverage-%250-yellow.svg?style=plastic)
 
