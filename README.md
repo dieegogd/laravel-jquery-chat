@@ -1,5 +1,6 @@
 # laravel-jquery-chat
-Chat developed in jQuery for Laravel php7
+Chat developed in jQuery for Laravel php7<br>
+This chat works in Localhost without Internet, it works in Intranet using jQuery
 
 ![licence](https://img.shields.io/badge/licencia-MIT-red.svg?style=plastic)
 ![version](https://img.shields.io/badge/version-v0.3.1-blue.svg?style=plastic)
