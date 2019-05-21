@@ -25,6 +25,14 @@ class LaravelJqueryChatServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__.'/resources/views' => resource_path('views'),
+        ], 'public');
+        $this->publishes([
+            __DIR__.'/resources/js' => resource_path('js'),
+        ], 'public');
+        $this->publishes([
+            __DIR__.'/resources/sass' => resource_path('sass'),
+        ], 'public');
     }
 }
