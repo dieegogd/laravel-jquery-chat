@@ -17,6 +17,7 @@ $authMiddleware = function ($accessor) use ($middleware) {
         array_merge((array) $middleware($accessor), ['auth'])
     );
 };
+
 /*
  * ljc routes.
  */

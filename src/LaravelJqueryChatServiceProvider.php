@@ -14,7 +14,7 @@ class LaravelJqueryChatServiceProvider extends ServiceProvider
     public function register()
     {
         //Registra las rutas y macros
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/laravel-jquery-chat.php');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-jquery-chat');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
     }
@@ -26,9 +26,9 @@ class LaravelJqueryChatServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/resources/views' => resource_path('views'),
-        ], 'public');
+        $this->publishes([                                        
+            __DIR__.'/resources/views' => resource_path('views'), 
+        ], 'public');                                             
         $this->publishes([
             __DIR__.'/resources/js' => resource_path('js'),
         ], 'public');
