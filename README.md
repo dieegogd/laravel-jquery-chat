@@ -26,26 +26,30 @@ composer require dieegogd/laravel-jquery-chat @dev
 
 3. Publish assets with the next command:
 ```bash
-php artisan vendor:publish
+php artisan vendor:publish --tag=public --force
 ```
-you need choice the option of dieegogd/laravel-jquery-chat
 
-4. Edit your resources/js/app.js and add this line at the end of file:
+4. Migrate table with command:
+```bash
+php artisan migrate
+```
+
+5. Edit your resources/js/app.js and add this line at the end of file:
 ```bash
 require('./laravel-jquery-chat.js');
 ```
 
-5. Edit your resources/sass/app.scss and add this line at the end of file:
+6. Edit your resources/sass/app.scss and add this line at the end of file:
 ```bash
 @import 'laravel-jquery-chat.scss';
 ```
 
-6. You need execute NPM with the command:
+7. You need execute NPM with the command:
 ```bash
 npm run dev
 ```
 
-7. In your master page, inmediatly after body put the next lines:
+8. In your master page, inmediatly after body put the next lines:
 ```bash
 <body>
     @if (Auth::check())
@@ -57,7 +61,7 @@ npm run dev
 </body>
 ```
 
-8. For open a window chat, you need to do a button
+9. For open a window chat, you need to do a button
 ```bash
 @if ($user->id != \Auth::user()->id)
     <button
