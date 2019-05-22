@@ -16,7 +16,7 @@ This chat works in Localhost without Internet, it works in Intranet using jQuery
 
 1. The first step is get by composer, put in root directory of your project and execute:
 ```bash
-composer require dieegogd/snotifweb @dev
+composer require dieegogd/laravel-jquery-chat @dev
 ```
 
 2. Publish assets with the next command:
