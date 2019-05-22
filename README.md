@@ -19,30 +19,30 @@ This chat works in Localhost without Internet, it works in Intranet using jQuery
 composer require dieegogd/laravel-jquery-chat @dev
 ```
 
-2. Publish assets with the next command:
+2. Add the Service Container in your file config/app.php
+```bash
+  Dieegogd\LaravelJqueryChat\LaravelJqueryChatServiceProvider::class,
+```
+
+3. Publish assets with the next command:
 ```bash
 php artisan vendor:publish
 ```
 you need choice the option of dieegogd/laravel-jquery-chat
 
-3. Edit your resources/js/app.js and add this line at the end of file:
+4. Edit your resources/js/app.js and add this line at the end of file:
 ```bash
 require('./laravel-jquery-chat.js');
 ```
 
-4. Edit your resources/sass/app.scss and add this line at the end of file:
+5. Edit your resources/sass/app.scss and add this line at the end of file:
 ```bash
 @import 'laravel-jquery-chat.scss';
 ```
 
-5. You need execute NPM with the command:
+6. You need execute NPM with the command:
 ```bash
 npm run dev
-```
-
-6. Add the Service Container in your file config/app.php
-```bash
-  Dieegogd\LaravelJqueryChat\LaravelJqueryChatServiceProvider::class,
 ```
 
 7. In your master page, inmediatly after body put the next lines:
