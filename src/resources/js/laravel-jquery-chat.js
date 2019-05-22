@@ -82,13 +82,25 @@ fbChat = {
       $('#' + vWinId + '_form').submit(function(event){
         var form = $(this);
         event.preventDefault();
-        if (form.find('.chat_mje_inputs_message').val().trim()) {
+        var mje = form.find('.chat_mje_inputs_message').val().trim();
+        form.find('.chat_mje_inputs_message').val('');
+        if (mje) {
           fbChatPostCollector.push({
             'user_to_id': form.find('input[name="user_to_id"]').val(),
-            'message': form.find('.chat_mje_inputs_message').val()
+            'message': mje
           });
-          form.find('.chat_mje_inputs_message').val('');
-          console.log(fbChatPostCollector);
+          $('#' + vWinId + ' > .chat_mjes').append(
+            '<div class="chat_mje me doDelete">' +
+              '<div class="chat_mje_message">' +
+                mje +
+                ' <i class="fas fa-check"></i>' +
+              '</div>' +
+              '<div class="clearfloat"></div>' +
+            '</div>'
+          );
+          // mover el scroll al final
+          var scroll=$('#' + vWinId + ' > .chat_mjes');
+          scroll.animate({scrollTop: scroll.prop("scrollHeight")}, 250);
         }
       });
     }
@@ -134,6 +146,7 @@ fbChat = {
 
           // agregar mensaje
           if ($('#' + vMjeId).length == 0) {
+            $('#' + vWinId + ' > .chat_mjes .doDelete').first().remove();
             $('#' + vWinId + ' > .chat_mjes').append(
               '<div id="' + vMjeId + '" class="chat_mje ' +
                 jsonData.chats[i].person +
@@ -141,6 +154,7 @@ fbChat = {
               '>' +
                 '<div class="chat_mje_message">' +
                   jsonData.chats[i].message +
+                  ' <i class="fas fa-check-double"></i>' +
                 '</div>' +
                 '<div class="clearfloat"></div>' +
               '</div>'
