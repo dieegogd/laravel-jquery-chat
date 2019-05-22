@@ -4,13 +4,9 @@ This chat works in Localhost without Internet, it works in Intranet using jQuery
 
 ![licence](https://img.shields.io/badge/licencia-MIT-red.svg?style=plastic)
 ![version](https://img.shields.io/badge/version-v0.5.4-blue.svg?style=plastic)
-![testscase](https://img.shields.io/badge/testcase-0-green.svg?style=plastic)
-![coverage](https://img.shields.io/badge/coverage-%250-yellow.svg?style=plastic)
-
 ![php](https://img.shields.io/badge/php->=7.1-yellow.svg?style=plastic)
 ![laravel](https://img.shields.io/badge/laravel-5.7.28-yellow.svg?style=plastic)
 ![date](https://img.shields.io/date/1557925074.svg?style=plastic)
-![status](https://img.shields.io/badge/status-down-green.svg?style=plastic)
 
 ### INSTALLATION
 
