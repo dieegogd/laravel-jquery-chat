@@ -179,7 +179,8 @@ $(function(){
   if ($('#chatsIndex > div').length > 0) {
     // Initialize the chat
     fbChat.bootChat();
-    $('.chatInit').click(function(){
+    $('.chatInit').click(function(event){
+      event.preventDefault();
       fbChat.addWindow($(this).data('chat_win_id'), $(this).data('user_name'));
     });
   }
