@@ -18,8 +18,8 @@
     position: relative;
     padding: 5px 40px 5px 10px;
     font-weight: bold;
-    background-color: var(--main-color-verde);
-    color: var(--main-color-white);
+    background-color: #4c827f;
+    color: #ffffff;
     border-radius: 4px 4px 0 0;
     cursor: pointer;
     user-select: none;
@@ -32,7 +32,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    color: var(--main-color-white);
+    color: #ffffff;
     font-weight: bold;
     user-select: none;
     -moz-user-select: none;
@@ -41,15 +41,15 @@
     -o-user-select: none;
 }
 #chatsIndex > div > .chat_win > .chat_mjes {
-    background-color: var(--main-color-white);
+    background-color: #ffffff;
     width: 320px;
     height: 240px;
     overflow: auto;
     padding: 10px 0;
     float: none;
     clear: both;
-    border-left: 1px solid var(--main-color-ocupgray);
-    border-right: 1px solid var(--main-color-ocupgray);
+    border-left: 1px solid #c9c9c9;
+    border-right: 1px solid #c9c9c9;
 }
 #chatsIndex > div .chat_mje {
     margin: 0 15px;
@@ -67,8 +67,8 @@
 #chatsIndex > div .chat_mje.me > .chat_mje_message {
     float: right;
     margin-left: 45px;
-    background-color: var(--main-color-cream);
-    color: var(--main-color-gray);
+    background-color: #eaeef1;
+    color: #666666;
     border-radius: 8px 0 8px 8px;
 }
 #chatsIndex > div .chat_mje.you > .chat_mje_message:before {
@@ -76,7 +76,7 @@
     content: ' ';
     width: 0;
     height: 0;
-    border-top: 5px solid var(--main-color-verde);
+    border-top: 5px solid #4c827f;
     border-left: 5px solid transparent;
     left: -5px;
     top: 0px;
@@ -86,7 +86,7 @@
     content: ' ';
     width: 0;
     height: 0;
-    border-top: 5px solid var(--main-color-cream);
+    border-top: 5px solid #eaeef1;
     border-right: 5px solid transparent;
     right: -5px;
     top: 0px;
@@ -94,8 +94,8 @@
 #chatsIndex > div .chat_mje.you > .chat_mje_message {
     float: left;
     margin-right: 45px;
-    background-color: var(--main-color-verde);
-    color: var(--main-color-white);
+    background-color: #4c827f;
+    color: #ffffff;
     border-radius: 0 8px 8px 8px;
 }
 #chatsIndex > div .chat_mje_inputs {
@@ -103,10 +103,10 @@
     display: block;
 }
 #chatsIndex > div .chat_mje_inputs.inactive {
-    background-color: var(--main-color-ocupgray);
+    background-color: #c9c9c9;
 }
 #chatsIndex > div .chat_mje_inputs.active {
-    background-color: var(--main-color-verde);
+    background-color: #4c827f;
 }
 #chatsIndex > div .chat_mje_inputs > form {
     margin: 0px;
@@ -114,29 +114,29 @@
 #chatsIndex > div .chat_mje_inputs_message {
     padding: 5px 10px;
     border: none;
-    color: var(--main-color-gray);
+    color: #666666;
     width: 250px;
     margin-right: 1px;
 }
 #chatsIndex > div .chat_mje_inputs_send {
     padding: 4px 10px;
     font-weight: bold;
-    color: var(--main-color-white);
+    color: #ffffff;
     width: 65px;
 }
 #chatsIndex > div .chat_mje_inputs.inactive .chat_mje_inputs_send {
-    background-color: var(--main-color-ocupgray);
-    border: 1px solid var(--main-color-ocupgray);
+    background-color: #c9c9c9;
+    border: 1px solid #c9c9c9;
     cursor: not-allowed;
 }
 #chatsIndex > div .chat_mje_inputs.active .chat_mje_inputs_send {
-    background-color: var(--main-color-verde);
-    border: 1px solid var(--main-color-verde);
+    background-color: #4c827f;
+    border: 1px solid #4c827f;
     cursor: pointer;
 }
 #chatsIndex > div .chat_mje_user {
     display: inline;
-    color: var(--main-color-verde);
+    color: #4c827f;
     font-weight: bold;
 }
 #chatsIndex > div .chat_mje_message {
